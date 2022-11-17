@@ -1,0 +1,18 @@
+
+Showing Recent Issues
+
+Build target CollectionView Demo Cell of project CollectionView Demo Cell with configuration Debug
+
+CompileStoryboard /Users/abulkashem/Desktop/iOS\ All/CollectionView/CollectionView\ Demo\ Cell/CollectionView\ Demo\ Cell/Base.lproj/Main.storyboard (in target 'CollectionView Demo Cell' from project 'CollectionView Demo Cell')
+    cd /Users/abulkashem/Desktop/iOS\ All/CollectionView/CollectionView\ Demo\ Cell
+    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --module CollectionView_Demo_Cell --output-partial-info-plist /Users/abulkashem/Library/Developer/Xcode/DerivedData/CollectionView_Demo_Cell-efimsijekecatubowsvrxkfteejy/Build/Intermediates.noindex/CollectionView\ Demo\ Cell.build/Debug-iphonesimulator/CollectionView\ Demo\ Cell.build/Base.lproj/Main-SBPartialInfo.plist --auto-activate-custom-fonts --target-device iphone --target-device ipad --minimum-deployment-target 16.1 --output-format human-readable-text --compilation-directory /Users/abulkashem/Library/Developer/Xcode/DerivedData/CollectionView_Demo_Cell-efimsijekecatubowsvrxkfteejy/Build/Intermediates.noindex/CollectionView\ Demo\ Cell.build/Debug-iphonesimulator/CollectionView\ Demo\ Cell.build/Base.lproj /Users/abulkashem/Desktop/iOS\ All/CollectionView/CollectionView\ Demo\ Cell/CollectionView\ Demo\ Cell/Base.lproj/Main.storyboard
+
+2022-11-11 12:28:43.365 IBAgent-iOS[2184:53233] Incorrect screen size for <UIScreen: 0x152905700; bounds: {{0, 0}, {0, 0}}> in UICollectionViewData
+/* com.apple.ibtool.document.warnings */
+/Users/abulkashem/Desktop/iOS All/CollectionView/CollectionView Demo Cell/CollectionView Demo Cell/Base.lproj/Main.storyboard:hqs-lf-ugk: warning: Prototype collection view cells must have reuse identifiers [9]
+
+/Users/abulkashem/Desktop/iOS All/CollectionView/CollectionView Demo Cell/CollectionView Demo Cell/Base.lproj/Main.storyboard:hqs-lf-ugk: Prototype collection view cells must have reuse identifiers
+
+
+
+Build succeeded    11/11/22 12:28 PM    0.3 seconds
