@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CollectionViewLeft_RightDirection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fzA-RA-Kn1">
+                                <rect key="frame" x="0.0" y="59" width="393" height="155"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="155" id="V1P-qa-hVZ"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Rl1-4z-q4q">
+                                    <size key="itemSize" width="84" height="20"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DirectionCvCell" id="YC9-50-lpH" customClass="DirectionCvCell" customModule="CollectionViewLeft_RightDirection" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="84" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vum-O2-n0M">
+                                            <rect key="frame" x="0.0" y="0.0" width="84" height="20"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="84" height="20"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fhe-gy-oKx">
+                                <rect key="frame" x="10" y="124" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="bDW-7W-40L"/>
+                                    <constraint firstAttribute="width" constant="25" id="nps-sv-xcZ"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="chevron.backward" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonLeftArrowAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HtN-ll-uJw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Anm-0F-MDQ">
+                                <rect key="frame" x="358" y="124" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="aLz-ut-CaT"/>
+                                    <constraint firstAttribute="height" constant="25" id="hpQ-Cy-qJz"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="chevron.forward" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonRightArrowAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rYF-qE-d0B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Anm-0F-MDQ" firstAttribute="centerY" secondItem="fzA-RA-Kn1" secondAttribute="centerY" id="8mu-2S-dpC"/>
+                            <constraint firstItem="fzA-RA-Kn1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CLc-i9-Uz8"/>
+                            <constraint firstItem="fzA-RA-Kn1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LI5-Mf-VUD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Anm-0F-MDQ" secondAttribute="trailing" constant="10" id="SDE-QE-xrj"/>
+                            <constraint firstItem="fzA-RA-Kn1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="V5P-sh-dzp"/>
+                            <constraint firstItem="Fhe-gy-oKx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Yll-cr-EVg"/>
+                            <constraint firstItem="Fhe-gy-oKx" firstAttribute="centerY" secondItem="fzA-RA-Kn1" secondAttribute="centerY" id="kcm-GD-LkN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="fzA-RA-Kn1" id="UFh-qN-swl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5.343511450381679" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <image name="chevron.forward" catalog="system" width="97" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
